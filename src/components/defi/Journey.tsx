@@ -1,7 +1,7 @@
 "use client";
 
 import { phases, pillars, TOTAL_DAYS, checkinDays, type Pillar } from "@/content/defi";
-import { completedCount, currentStreak, isDayComplete, type DefiState } from "@/lib/defi-store";
+import { completedCount, currentStreak, isDayComplete, type DefiState } from "@/lib/defi-core";
 
 export function Journey({
   state,

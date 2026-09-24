@@ -1,7 +1,7 @@
 "use client";
 
 import { checkinDays, checkinFields, type CheckinKey } from "@/content/defi";
-import type { DefiState } from "@/lib/defi-store";
+import type { DefiState } from "@/lib/defi-core";
 
 export function Checkins({
   state,

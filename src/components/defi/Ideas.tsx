@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import type { DefiState, Idea } from "@/lib/defi-store";
+import type { DefiState, Idea } from "@/lib/defi-core";
 
 const buckets: { id: Idea["bucket"]; label: string; hint: string }[] = [
   { id: "agir", label: "Agir", hint: "Moins de 2 min ou prioritaire : fais-le aujourd'hui" },

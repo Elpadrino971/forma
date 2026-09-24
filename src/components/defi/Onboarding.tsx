@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { manifesto, phases, pillars, TOTAL_DAYS, type Pillar } from "@/content/defi";
-import { toISODate } from "@/lib/defi-store";
+import { toISODate } from "@/lib/defi-core";
 
 const pillarPitch: Record<Pillar, string> = {
   corps: "Une séance par jour, sans matériel, qui monte en intensité toutes les semaines.",

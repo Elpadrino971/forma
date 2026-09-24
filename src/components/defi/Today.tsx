@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { dailyRules, getDay, pillars, TOTAL_DAYS, type Mission } from "@/content/defi";
-import { dateOfDay, isDayComplete, type DefiState } from "@/lib/defi-store";
+import { dateOfDay, isDayComplete, type DefiState } from "@/lib/defi-core";
 import { Check } from "@/components/ui";
 import { Timer } from "./Timer";
 

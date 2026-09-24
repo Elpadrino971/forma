@@ -9,9 +9,9 @@ import {
   isDayComplete,
   missedDays,
   toISODate,
-  useDefiState,
   type DefiState,
-} from "@/lib/defi-store";
+} from "@/lib/defi-core";
+import { useDefiState } from "@/lib/defi-store";
 import { Checkins } from "./Checkins";
 import { Ideas } from "./Ideas";
 import { Journey } from "./Journey";

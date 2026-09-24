@@ -67,3 +67,4 @@ semaine), qui montent en intensité sur 3 phases de 30 jours.
   si l'app est ouverte.
 - **Données** : stockées uniquement dans le navigateur (localStorage), export/import JSON possible.
 - Installable sur l'écran d'accueil (`public/defi.webmanifest`), non indexée par les moteurs.
+- **App mobile native** (iOS/Android, alarmes qui sonnent app fermée) : voir [`mobile/README.md`](mobile/README.md).

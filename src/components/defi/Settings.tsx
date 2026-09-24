@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { pillars, TOTAL_DAYS, type Pillar } from "@/content/defi";
 import { chime, notify, registerServiceWorker, requestNotifications, unlockAudio } from "@/lib/alarm";
-import { dateOfDay, defaultState, type DefiState } from "@/lib/defi-store";
+import { dateOfDay, defaultState, hydrate, type DefiState } from "@/lib/defi-core";
 import { buildIcs, downloadFile } from "@/lib/ics";
 
 const alarmLabels: Record<Pillar, { title: string; description: string; minutes: number }> = {
@@ -80,7 +80,7 @@ export function Settings({ state, update, replace, today }: Props) {
     try {
       const parsed = JSON.parse(await file.text()) as DefiState;
       if (parsed.version !== 1) throw new Error("version");
-      replace({ ...defaultState, ...parsed, alarms: { ...defaultState.alarms, ...parsed.alarms } });
+      replace(hydrate(parsed));
       alert("Sauvegarde restaurée.");
     } catch {
       alert("Ce fichier n'est pas une sauvegarde valide du défi.");
