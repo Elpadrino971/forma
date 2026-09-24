@@ -1,0 +1,12 @@
+{
+  "name": "Défi 90 jours",
+  "short_name": "Défi 90",
+  "description": "Corps, éloquence, esprit : 90 jours pour ne plus être reconnu.",
+  "start_url": "/defi",
+  "scope": "/defi",
+  "display": "standalone",
+  "background_color": "#0d0f15",
+  "theme_color": "#0d0f15",
+  "lang": "fr",
+  "icons": [{ "src": "/defi-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

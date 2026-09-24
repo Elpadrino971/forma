@@ -53,3 +53,17 @@ Le site est fonctionnel mais **volontairement incomplet** sur les points qui doi
 - Le navigateur n'envoie jamais de prix, seulement un identifiant de formule validé côté serveur.
 - L'accès à la formation ne doit être ouvert **que** par le webhook (signature vérifiée), jamais par la page `/merci`, qui est publique.
 - Aucune donnée bancaire ne transite par ce serveur.
+
+## Défi 90 jours (`/defi`)
+
+App perso « disparais 90 jours, reviens méconnaissable » : chaque jour une séance de sport, un
+exercice d'éloquence et un travail de clarté mentale (journal, respiration, modèle mental de la
+semaine), qui montent en intensité sur 3 phases de 30 jours.
+
+- **Programme** : tout le contenu est dans `src/content/defi.ts` (séances, sujets d'impro, questions
+  du journal, règles quotidiennes).
+- **Alarmes** : onglet « Alarmes ». Le fichier `.ics` ajoute 3 rappels/jour dans le calendrier du
+  téléphone (fiable, même écran verrouillé). L'alarme dans l'app (son + notification) ne sonne que
+  si l'app est ouverte.
+- **Données** : stockées uniquement dans le navigateur (localStorage), export/import JSON possible.
+- Installable sur l'écran d'accueil (`public/defi.webmanifest`), non indexée par les moteurs.
